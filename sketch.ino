@@ -24,7 +24,7 @@ void loop() {
   int ppb = map((int)avg, 0, 1023, 0, 15);
   Serial.print(sensor_val);
   Serial.print(", ");
-  Serial.println(avg);
+  Serial.print(avg);
   Serial.print(", ");
   Serial.println(ppb);
   delay(100);
