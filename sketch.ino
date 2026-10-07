@@ -25,6 +25,8 @@ void loop() {
   Serial.print(sensor_val);
   Serial.print(", ");
   Serial.println(avg);
+  Serial.print(", ");
+  Serial.println(ppb);
   delay(100);
   if (ppb >= 10) {
     lcd.setCursor(0,0);
